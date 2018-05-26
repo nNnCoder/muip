@@ -19,19 +19,27 @@ public class CustomDropdown : MonoBehaviour {
 	[Header("SETTINGS")]
 	[Tooltip("IMPORTANT! EVERY DORPDOWN MUST HAVE A DIFFERENT ID")]
 	public int DropdownID = 0;
+    public HeightSize heightSize;
 	public bool customPlaceholder;
 	public bool rememberSelection = true;
+    public bool enableIcon = true;
 
-	//public bool darkTrigger = true;
+    //public bool darkTrigger = true;
 
-	private bool isOn;
-	private string inAnim = "In";
-	private string outAnim = "Out";
+    private bool isOn;
 
 	private string sText;
 	private string sImage;
 
-	void Start ()
+    public enum HeightSize
+    {
+        SMALL,
+        MEDIUM,
+        BIG
+    }
+
+
+    void Start ()
 	{
 		if (rememberSelection == true)
 		{
@@ -50,21 +58,54 @@ public class CustomDropdown : MonoBehaviour {
 			selectedText.text = sText;
 			//	selectedImage.sprite = 
 		}
-	}
+
+        if (enableIcon == false)
+        {
+            selectedImage.enabled = false;
+        }
+    }
 
 	public void Animate ()
 	{
 		if (isOn == true) 
 		{
-			dropdownAnimator.Play (outAnim);
-			isOn = false;
+            if (heightSize == HeightSize.SMALL)
+            {
+                dropdownAnimator.Play("Out Small");
+            }
+
+            else if (heightSize == HeightSize.MEDIUM)
+            {
+                dropdownAnimator.Play("Out Medium");
+            }
+
+            else if (heightSize == HeightSize.BIG)
+            {
+                dropdownAnimator.Play("Out Big");
+            }
+
+            isOn = false;
 			fieldTrigger.SetActive (false);
 		}
 
 		else
 		{
-			dropdownAnimator.Play (inAnim);
-			isOn = true;
+            if (heightSize == HeightSize.SMALL)
+            {
+                dropdownAnimator.Play("In Small");
+            }
+
+            else if (heightSize == HeightSize.MEDIUM)
+            {
+                dropdownAnimator.Play("In Medium");
+            }
+
+            else if (heightSize == HeightSize.BIG)
+            {
+                dropdownAnimator.Play("In Big");
+            }
+
+            isOn = true;
 			fieldTrigger.SetActive (true);
 		}
 	}
