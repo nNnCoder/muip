@@ -42,7 +42,6 @@ public class CustomDropdown : MonoBehaviour {
     }
 	
 	public GameObject OptionTemplate;
-	public Sprite DefaultSprite;
 	private class Option {
 		public String Name;
 		public Sprite Icon;
@@ -53,7 +52,7 @@ public class CustomDropdown : MonoBehaviour {
 	private List<Option> _Options = new List<Option>();
 
 
-    void Start ()
+    void Awake()
 	{
 		if (rememberSelection == true)
 		{
@@ -178,11 +177,15 @@ public class CustomDropdown : MonoBehaviour {
 
 	public void AddOption(string name, Sprite icon = null)
 	{
-		icon = icon == null ? DefaultSprite : icon;
+		icon = icon == null ? customIcon : icon;
 
 		var optionGo = GameObject.Instantiate(OptionTemplate);
 		optionGo.SetActive(true);
+		var rect = optionGo.transform;
 		optionGo.transform.parent = transform.Find("Content").Find("Items");
+		var rectTransform = optionGo.GetComponent<RectTransform>();
+		rectTransform.localPosition = Vector3.zero;
+		rectTransform.localScale = Vector3.one;
 
 		var dropdrownItem = optionGo.GetComponent<DropdownItem>();
 		dropdrownItem.itemText = name;
