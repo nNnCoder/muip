@@ -45,6 +45,13 @@ public class DropdownItem : MonoBehaviour {
 		mainScript.selectedText.text = itemText;
 		mainScript.selectedImage.sprite = itemImage;
 
+        if (mainScript.enableNotification == true)
+        {
+            GameObject go = Instantiate(mainScript.notificationPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+            transform.root.GetComponent<Canvas>();
+            go.transform.SetParent(transform.root, false);
+        }
+
 	//	Debug.Log ("Clicked succesfully. Dropdown ID: " + mainScript.DropdownID);
 	}
 }

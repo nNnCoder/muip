@@ -1,4 +1,4 @@
-Modern UI Pack - v1.3
+Modern UI Pack - v1.3d
 
 Do you have any questions or requests?
 Contact me via e-mail: isa.steam@outlook.com
@@ -9,18 +9,24 @@ https://www.youtube.com/c/Michsky
 Want to support?
 https://www.patreon.com/michsky
 
+Special thanks to:
+Raphael Monnerat (https://github.com/Shinao)
+
 Change Log v1.3
 ----------------------------------------
 • New demo scene
-• Panels added
-• Shapes added
+• Modal windows added
+• Radial sliders added
 • New notifications added
-• New sliders added
-• New tool tips added
-• New switches added
+• New buttons added
+• Disabled button animation added
 • New icons added
 • More borders added
 • Improved dropdown
+• Improved progress bar
+
+Known issues:
+• PB (Loop) is static
 ----------------------------------------
 
 Change Log v1.2

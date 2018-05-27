@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DemoManager : MonoBehaviour {
@@ -8,8 +9,8 @@ public class DemoManager : MonoBehaviour {
 	public Animator canvasAnimator;
 
 	[Header("PANELS")]
+	public CustomDropdown PanelDropdownSelector;
 	public List<GameObject> panels = new List<GameObject>();
-	public int currentPanelIndex = 0;
 	public GameObject currentPanel;
 	private CanvasGroup canvasGroup;
 
@@ -17,6 +18,21 @@ public class DemoManager : MonoBehaviour {
 	private bool fadeOut = false;
 	private bool fadeIn = false;
 	[Range(0, 10)]public float fadeFactor = 8f;
+
+	void Start()
+	{
+		PanelDropdownSelector.ClearOptions();
+		foreach (var panel in panels)
+			PanelDropdownSelector.AddOption(panel.name);
+		PanelDropdownSelector.OnSelectedOptionChanged.AddListener(OnPanelChange);
+	}
+
+	void OnPanelChange()
+	{
+		var panelSelected = PanelDropdownSelector.GetSelectedOption();
+		var panel = panels.Find(p => p.name == panelSelected);
+		StartCoroutine("ChangePage", panel);
+	}
 
 	void Update ()
 	{
@@ -28,13 +44,13 @@ public class DemoManager : MonoBehaviour {
 		}
 	}
 
-	public void ChangePanel (int newPage) 
+	public void ChangePanel (GameObject newPanel) 
 	{
-		if (newPage != currentPanelIndex)
-			StartCoroutine ("ChangePage", newPage);
+	//	if (newPage != currentPanelIndex)
+		//   StartCoroutine ("ChangePage", newPage);
 	}
 
-	public IEnumerator ChangePage (int newPage)
+	public IEnumerator ChangePage (GameObject newPanel)
 	{
 		canvasGroup = currentPanel.GetComponent<CanvasGroup>();
 		canvasGroup.alpha = 1f;
@@ -49,8 +65,7 @@ public class DemoManager : MonoBehaviour {
 
 		fadeIn = true;
 		fadeOut = false;
-		currentPanelIndex = newPage;
-		currentPanel = panels [currentPanelIndex];
+		currentPanel = newPanel;
 		currentPanel.SetActive (true);
 		canvasGroup = currentPanel.GetComponent<CanvasGroup>();
 		canvasGroup.alpha = 0f;
