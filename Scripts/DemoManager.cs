@@ -46,8 +46,13 @@ public class DemoManager : MonoBehaviour {
 
 	public void ChangePanel (GameObject newPanel) 
 	{
+<<<<<<< HEAD
 	//	if (newPage != currentPanelIndex)
 		//   StartCoroutine ("ChangePage", newPage);
+=======
+		// if (newPage != currentPanelIndex)
+		// 	StartCoroutine ("ChangePage", newPage);
+>>>>>>> e64458805860f72f77c174658dd7197863b4efcc
 	}
 
 	public IEnumerator ChangePage (GameObject newPanel)
