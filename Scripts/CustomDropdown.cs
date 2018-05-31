@@ -26,8 +26,8 @@ public class CustomDropdown : MonoBehaviour {
     public HeightSize heightSize;
 	public bool customPlaceholder;
 	public bool rememberSelection = true;
-    public bool enableIcon = true;
-    public bool enableNotification = true;
+    public bool enableIcon = true; // WIP
+    private bool enableNotification = false;
 
     //public bool darkTrigger = true;
 

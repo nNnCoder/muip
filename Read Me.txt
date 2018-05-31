@@ -1,4 +1,4 @@
-Modern UI Pack - v1.3d
+Modern UI Pack - v1.3f
 
 Do you have any questions or requests?
 Contact me via e-mail: isa.steam@outlook.com
@@ -17,6 +17,7 @@ Change Log v1.3
 • New demo scene
 • Modal windows added
 • Radial sliders added
+• Animated icons added
 • New notifications added
 • New buttons added
 • Disabled button animation added
@@ -24,9 +25,10 @@ Change Log v1.3
 • More borders added
 • Improved dropdown
 • Improved progress bar
+• Tutorials added
 
 Known issues:
-• PB (Loop) is static
+• PB Standart (Loop) is static
 ----------------------------------------
 
 Change Log v1.2

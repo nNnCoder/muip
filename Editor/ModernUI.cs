@@ -132,18 +132,6 @@ public class ModernUIEditor : EditorWindow {
 		Instantiate(Resources.Load<GameObject>("Progress Bars/Standart PB")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Progress Bars (Loop)/Circle Arround")]
-	static void CircleArround()
-	{
-		Instantiate(Resources.Load<GameObject>("Progress Bars (Loop)/Circle Arround")).GetComponent<ModernUIEditor>();
-	}
-
-	[MenuItem("Tools/Modern UI Pack/Progress Bars (Loop)/Circle Fix")]
-	static void CircleFix()
-	{
-		Instantiate(Resources.Load<GameObject>("Progress Bars (Loop)/Circle Fix")).GetComponent<ModernUIEditor>();
-	}
-
 	[MenuItem("Tools/Modern UI Pack/Progress Bars (Loop)/Circle Glass")]
 	static void CircleGlass()
 	{
@@ -264,7 +252,73 @@ public class ModernUIEditor : EditorWindow {
 		Instantiate(Resources.Load<GameObject>("Input Fields/Standart Input Field")).GetComponent<ModernUIEditor>();
 	}
 
-	public static void OnCustomWindow()
+    [MenuItem("Tools/Modern UI Pack/Sliders/Radial Standart")]
+    static void StandartRadialSlider()
+    {
+        Instantiate(Resources.Load<GameObject>("Sliders/Radial Standart")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Sliders/Radial Gradient")]
+    static void GradientRadialSlider()
+    {
+        Instantiate(Resources.Load<GameObject>("Sliders/Radial Gradient")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Modal Windows/Only Exit Button")]
+    static void OEBModal()
+    {
+        Instantiate(Resources.Load<GameObject>("Modal Windows/Only Exit Button")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Modal Windows/With Buttons")]
+    static void WBModal()
+    {
+        Instantiate(Resources.Load<GameObject>("Modal Windows/With Buttons")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Buttons/Rounded Outline With Image")]
+    static void ROWIButton()
+    {
+        Instantiate(Resources.Load<GameObject>("Buttons/Rounded Outline With Image")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Buttons/Rounded With Image")]
+    static void RWIButton()
+    {
+        Instantiate(Resources.Load<GameObject>("Buttons/Rounded With Image")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Animated Icons/Hamburger to Exit")]
+    static void AIHTE()
+    {
+        Instantiate(Resources.Load<GameObject>("Animated Icons/Hamburger to Exit")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Animated Icons/Heart Pop")]
+    static void AIHP()
+    {
+        Instantiate(Resources.Load<GameObject>("Animated Icons/Heart Pop")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Animated Icons/Message Bubbles")]
+    static void AIMB()
+    {
+        Instantiate(Resources.Load<GameObject>("Animated Icons/Message Bubbles")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Animated Icons/Switch")]
+    static void AISW()
+    {
+        Instantiate(Resources.Load<GameObject>("Animated Icons/Switch")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Animated Icons/Yes to No")]
+    static void AIYTN()
+    {
+        Instantiate(Resources.Load<GameObject>("Animated Icons/Yes to No")).GetComponent<ModernUIEditor>();
+    }
+
+    public static void OnCustomWindow()
 	{
 		EditorWindow.GetWindow(typeof(ModernUIEditor));
 	}
