@@ -14,7 +14,6 @@ public class CustomDropdown : MonoBehaviour {
 	public GameObject fieldTrigger;
 	public Text selectedText;
 	public Image selectedImage;
-    public GameObject notificationPrefab;
 
     [Header("PLACEHOLDER")]
 	public string customText;
@@ -27,7 +26,6 @@ public class CustomDropdown : MonoBehaviour {
 	public bool customPlaceholder;
 	public bool rememberSelection = true;
     public bool enableIcon = true; // WIP
-    private bool enableNotification = false;
 
     //public bool darkTrigger = true;
 

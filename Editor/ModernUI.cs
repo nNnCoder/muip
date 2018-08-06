@@ -126,10 +126,10 @@ public class ModernUIEditor : EditorWindow {
 		Instantiate(Resources.Load<GameObject>("Progress Bars/Radial PB Thin")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Progress Bars/Standart PB")]
-	static void StandartPB()
+	[MenuItem("Tools/Modern UI Pack/Progress Bars/Standard PB")]
+	static void StandardPB()
 	{
-		Instantiate(Resources.Load<GameObject>("Progress Bars/Standart PB")).GetComponent<ModernUIEditor>();
+		Instantiate(Resources.Load<GameObject>("Progress Bars/Standard PB")).GetComponent<ModernUIEditor>();
 	}
 
 	[MenuItem("Tools/Modern UI Pack/Progress Bars (Loop)/Circle Glass")]
@@ -156,22 +156,16 @@ public class ModernUIEditor : EditorWindow {
 		Instantiate(Resources.Load<GameObject>("Progress Bars (Loop)/Circle Trapez")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Progress Bars (Loop)/Standart Fastly")]
-	static void StandartFastly()
+	[MenuItem("Tools/Modern UI Pack/Progress Bars (Loop)/Standard Fastly")]
+	static void StandardFastly()
 	{
-		Instantiate(Resources.Load<GameObject>("Progress Bars (Loop)/Standart Fastly")).GetComponent<ModernUIEditor>();
+		Instantiate(Resources.Load<GameObject>("Progress Bars (Loop)/Standard Fastly")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Progress Bars (Loop)/Standart Finish")]
-	static void StandartFinish()
+	[MenuItem("Tools/Modern UI Pack/Progress Bars (Loop)/Standard Run")]
+	static void StandardRun()
 	{
-		Instantiate(Resources.Load<GameObject>("Progress Bars (Loop)/Standart Finish")).GetComponent<ModernUIEditor>();
-	}
-
-	[MenuItem("Tools/Modern UI Pack/Progress Bars (Loop)/Standart Run")]
-	static void StandartRun()
-	{
-		Instantiate(Resources.Load<GameObject>("Progress Bars (Loop)/Standart Run")).GetComponent<ModernUIEditor>();
+		Instantiate(Resources.Load<GameObject>("Progress Bars (Loop)/Standard Run")).GetComponent<ModernUIEditor>();
 	}
 
 	[MenuItem("Tools/Modern UI Pack/Sliders/Gradient")]
@@ -186,10 +180,10 @@ public class ModernUIEditor : EditorWindow {
 		Instantiate(Resources.Load<GameObject>("Sliders/Outline")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Sliders/Standart")]
-	static void StandartSlider()
+	[MenuItem("Tools/Modern UI Pack/Sliders/Standard")]
+	static void StandardSlider()
 	{
-		Instantiate(Resources.Load<GameObject>("Sliders/Standart")).GetComponent<ModernUIEditor>();
+		Instantiate(Resources.Load<GameObject>("Sliders/Standard")).GetComponent<ModernUIEditor>();
 	}
 
 	[MenuItem("Tools/Modern UI Pack/Switches/Outline")]
@@ -198,28 +192,28 @@ public class ModernUIEditor : EditorWindow {
 		Instantiate(Resources.Load<GameObject>("Switches/Outline")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Switches/Standart")]
-	static void StandartSwitch()
+	[MenuItem("Tools/Modern UI Pack/Switches/Standard")]
+	static void StandardSwitch()
 	{
-		Instantiate(Resources.Load<GameObject>("Switches/Standart")).GetComponent<ModernUIEditor>();
+		Instantiate(Resources.Load<GameObject>("Switches/Standard")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Toggles/Standart (Bold)")]
-	static void StandartToggleBold()
+	[MenuItem("Tools/Modern UI Pack/Toggles/Standard (Bold)")]
+	static void StandardToggleBold()
 	{
-		Instantiate(Resources.Load<GameObject>("Toggles/Standart Toggle (Bold)")).GetComponent<ModernUIEditor>();
+		Instantiate(Resources.Load<GameObject>("Toggles/Standard Toggle (Bold)")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Toggles/Standart (Light)")]
-	static void StandartToggleLight()
+	[MenuItem("Tools/Modern UI Pack/Toggles/Standard (Light)")]
+	static void StandardToggleLight()
 	{
-		Instantiate(Resources.Load<GameObject>("Toggles/Standart Toggle (Light)")).GetComponent<ModernUIEditor>();
+		Instantiate(Resources.Load<GameObject>("Toggles/Standard Toggle (Light)")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Toggles/Standart (Regular)")]
-	static void StandartToggleRegular()
+	[MenuItem("Tools/Modern UI Pack/Toggles/Standard (Regular)")]
+	static void StandardToggleRegular()
 	{
-		Instantiate(Resources.Load<GameObject>("Toggles/Standart Toggle (Regular)")).GetComponent<ModernUIEditor>();
+		Instantiate(Resources.Load<GameObject>("Toggles/Standard Toggle (Regular)")).GetComponent<ModernUIEditor>();
 	}
 
 	[MenuItem("Tools/Modern UI Pack/Tool Tips/Fading")]
@@ -234,28 +228,28 @@ public class ModernUIEditor : EditorWindow {
 		Instantiate(Resources.Load<GameObject>("Tool Tips/Scaling Tool Tip")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Dropdowns/Standart")]
-	static void StandartDropdown()
+	[MenuItem("Tools/Modern UI Pack/Dropdowns/Standard")]
+	static void StandardDropdown()
 	{
-		Instantiate(Resources.Load<GameObject>("Dropdowns/Standart Dropdown")).GetComponent<ModernUIEditor>();
+		Instantiate(Resources.Load<GameObject>("Dropdowns/Standard Dropdown")).GetComponent<ModernUIEditor>();
 	}
 
 	[MenuItem("Tools/Modern UI Pack/Dropdowns/Outline")]
-	static void StandartDropdownOutline()
+	static void StandardDropdownOutline()
 	{
 		Instantiate(Resources.Load<GameObject>("Dropdowns/Outline Dropdown")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Input Fields/Standart")]
-	static void StandartInputField()
+	[MenuItem("Tools/Modern UI Pack/Input Fields/Standard")]
+	static void StandardInputField()
 	{
-		Instantiate(Resources.Load<GameObject>("Input Fields/Standart Input Field")).GetComponent<ModernUIEditor>();
+		Instantiate(Resources.Load<GameObject>("Input Fields/Standard Input Field")).GetComponent<ModernUIEditor>();
 	}
 
-    [MenuItem("Tools/Modern UI Pack/Sliders/Radial Standart")]
-    static void StandartRadialSlider()
+    [MenuItem("Tools/Modern UI Pack/Sliders/Radial Standard")]
+    static void StandardRadialSlider()
     {
-        Instantiate(Resources.Load<GameObject>("Sliders/Radial Standart")).GetComponent<ModernUIEditor>();
+        Instantiate(Resources.Load<GameObject>("Sliders/Radial Standard")).GetComponent<ModernUIEditor>();
     }
 
     [MenuItem("Tools/Modern UI Pack/Sliders/Radial Gradient")]
@@ -264,16 +258,40 @@ public class ModernUIEditor : EditorWindow {
         Instantiate(Resources.Load<GameObject>("Sliders/Radial Gradient")).GetComponent<ModernUIEditor>();
     }
 
-    [MenuItem("Tools/Modern UI Pack/Modal Windows/Only Exit Button")]
+    [MenuItem("Tools/Modern UI Pack/Modal Windows/Style 1/Only Exit Button")]
     static void OEBModal()
     {
-        Instantiate(Resources.Load<GameObject>("Modal Windows/Only Exit Button")).GetComponent<ModernUIEditor>();
+        Instantiate(Resources.Load<GameObject>("Modal Windows/Style 1/Standard")).GetComponent<ModernUIEditor>();
     }
 
-    [MenuItem("Tools/Modern UI Pack/Modal Windows/With Buttons")]
+    [MenuItem("Tools/Modern UI Pack/Modal Windows/Style 1/With Buttons")]
     static void WBModal()
     {
-        Instantiate(Resources.Load<GameObject>("Modal Windows/With Buttons")).GetComponent<ModernUIEditor>();
+        Instantiate(Resources.Load<GameObject>("Modal Windows/Style 1/With Buttons")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Modal Windows/Style 1/With Tabs")]
+    static void WTabModal()
+    {
+        Instantiate(Resources.Load<GameObject>("Modal Windows/Style 1/With Tabs")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Modal Windows/Style 1/Auto-Resizing")]
+    static void ATRModal()
+    {
+        Instantiate(Resources.Load<GameObject>("Modal Windows/Style 1/Auto-Resizing")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Modal Windows/Style 2/Standard")]
+    static void S2TSModal()
+    {
+        Instantiate(Resources.Load<GameObject>("Modal Windows/Style 2/Standard")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Modal Windows/Style 2/With Tabs")]
+    static void ST2TModal()
+    {
+        Instantiate(Resources.Load<GameObject>("Modal Windows/Style 2/With Tabs")).GetComponent<ModernUIEditor>();
     }
 
     [MenuItem("Tools/Modern UI Pack/Buttons/Rounded Outline With Image")]
@@ -316,6 +334,18 @@ public class ModernUIEditor : EditorWindow {
     static void AIYTN()
     {
         Instantiate(Resources.Load<GameObject>("Animated Icons/Yes to No")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Animated Icons/Lock")]
+    static void AILOCK()
+    {
+        Instantiate(Resources.Load<GameObject>("Animated Icons/Lock")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Animated Icons/Sand Clock")]
+    static void AISAND()
+    {
+        Instantiate(Resources.Load<GameObject>("Animated Icons/Sand Clock")).GetComponent<ModernUIEditor>();
     }
 
     public static void OnCustomWindow()

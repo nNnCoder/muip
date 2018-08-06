@@ -18,7 +18,18 @@ public class ToggleAnim : MonoBehaviour {
 	{
 		this.toggleObject.GetComponent<Toggle>();
 		toggleObject.onValueChanged.AddListener(TaskOnClick);
-	}
+
+        // Backup plan :p
+        if (toggleObject.isOn)
+        {
+            toggleAnimator.Play(toggleOn);
+        }
+
+        else
+        {
+            toggleAnimator.Play(toggleOff);
+        }
+    }
 
 	void TaskOnClick(bool value)
 	{

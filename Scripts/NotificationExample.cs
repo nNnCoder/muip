@@ -22,7 +22,7 @@ public class NotificationExample : MonoBehaviour {
 
 	void Start()
 	{
-		notificationObject.SetActive (false);
+		//notificationObject.SetActive (false);
 	}
 
 	public void ShowNotification () 

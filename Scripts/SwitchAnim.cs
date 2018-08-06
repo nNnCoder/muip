@@ -4,37 +4,37 @@ using UnityEngine.UI;
 public class SwitchAnim : MonoBehaviour {
 
 	[Header("SWITCH")]
-	public bool onSwitch;
-	public Button switchObject;
+	public bool isOn;
+    public Animator switchAnimator;
 
-	[Header("ANIMATORS")]
-	public Animator switchAnimator;
-	public Animator onAnimator;
-	public Animator offAnimator;
+    private string onTransition = "Switch On";
+    private string offTransition = "Switch Off";
 
-	[Header("ANIM NAMES")]
-	public string switchAnim;
-	public string onTransition;
-	public string offTransition;
-
-	void Start ()
+    void Start ()
 	{
-		this.switchObject.GetComponent<Button>();
-		switchObject.onClick.AddListener(TaskOnClick);
-	}
+        if (isOn == true)
+        {
+            switchAnimator.Play(onTransition);
+        }
 
-	void TaskOnClick()
+        else
+        {
+            switchAnimator.Play(offTransition);
+        }
+    }
+
+	public void AnimateSwitch()
 	{
-		switchAnimator.Play(switchAnim);
-
-		if (onSwitch == true) 
+		if (isOn == true) 
 		{
-			offAnimator.Play (offTransition);
-		} 
+            switchAnimator.Play(offTransition);
+            isOn = false;
+        } 
 
 		else
 		{
-			onAnimator.Play(onTransition);
-		}
+            switchAnimator.Play(onTransition);
+            isOn = true;
+        }
 	}
 }
