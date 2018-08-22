@@ -240,11 +240,23 @@ public class ModernUIEditor : EditorWindow {
 		Instantiate(Resources.Load<GameObject>("Dropdowns/Outline Dropdown")).GetComponent<ModernUIEditor>();
 	}
 
-	[MenuItem("Tools/Modern UI Pack/Input Fields/Standard")]
-	static void StandardInputField()
-	{
-		Instantiate(Resources.Load<GameObject>("Input Fields/Standard Input Field")).GetComponent<ModernUIEditor>();
-	}
+    [MenuItem("Tools/Modern UI Pack/Input Fields/Standard/Left Aligned")]
+    static void StandardInputFieldLeft()
+    {
+        Instantiate(Resources.Load<GameObject>("Input Fields/Standard Input Field (Left Aligned)")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Input Fields/Standard/Middle Aligned")]
+    static void StandardInputFieldMiddle()
+    {
+        Instantiate(Resources.Load<GameObject>("Input Fields/Standard Input Field (Middle Aligned)")).GetComponent<ModernUIEditor>();
+    }
+
+    [MenuItem("Tools/Modern UI Pack/Input Fields/Standard/Right Aligned")]
+    static void StandardInputFieldRight()
+    {
+        Instantiate(Resources.Load<GameObject>("Input Fields/Standard Input Field (Right Aligned)")).GetComponent<ModernUIEditor>();
+    }
 
     [MenuItem("Tools/Modern UI Pack/Sliders/Radial Standard")]
     static void StandardRadialSlider()
